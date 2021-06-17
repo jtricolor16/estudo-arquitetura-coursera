@@ -1,0 +1,9 @@
+# Subrotinas e Apliações Main (Main Program and Subroutine)
+
+Este tipo de modelo arquitetônico deriva de implementações utilizando a linguagem C. Neste processo, há uma função principal que vai, de forma encadeada, invocando outras funcionalidades para executar e resolver pequenos componentes da aplicação. É recomendado utilizar este tipo de implementação quando irá se criar sistemas menores nos quais seja complexo definir de forma clara os objetos abstratos presentes na POO e em sistemas computacionais que rodarão em mais baixo nível, como sistemas embarcados.
+
+A estrutura pode ser representada através de grafos direcionados. O código é hierarquizdo, ou seja, inicia e se resolve na main, derivando para outras rotinas que irão resolver o que for necessário. Possibilita o reaproveitamento de funções e o acoplamento de bibliotecas. Os dados são armazenados em variáveis e é permitido o uso de dados abstrados, bem como ocorre em POO. No entanto, diferentemente deste, não é possível explorar herança explícita e não é simples estender um tipo abstrato.
+
+Outro ponto a se ressaltar é o comportamento desejado das funções. Elas serão invocadas, geralmente, passando argumentos e resultaram em um valor a ser retornado. Além disso, há como acessar componentes da aplicação por referência (ponteiros e array). Partindo do pressuposto de que a implementação foi feita corretamente, dado um valor, um outro valor previsto deverá ser retornado. Assim, as funções também podem ser classificadas como Black Box.
+
+Um ponto negativo dessa abordagem é o cuidado que se deve ter para que uma funcionalidade ou modificação resulte na alteração de um valor utilizado por outro componente da aplicação. Especialmente na lida com dados globais e com dados compartilhados entre subrotinas por referência.
