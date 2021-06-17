@@ -1,0 +1,7 @@
+# Databases
+
+A arquitetura centrada em banco de dados é comumente usada no mercado corporativo. Isso porque nos demais exemplos apresentados (POO e Main com subrotinas), os valores só permanecem acessíveis enquanto a aplicação está executando ou se persistirem as informações em arquivos. Porém, arquivos não são a melhor forma de se armazenar valores. Nem sempre todos os dados que ali estão serão necessários. Por conta disso, uma arquitetura centrada em banco de dados tem grande valor. Ela permite o armazenamento dos dados em uma estrutura exclusivamente preparada pra isso, que garante capacidade de persistência pós execução e integridade das informações.
+
+Outra característica importante é a capacidade de oferecer acesso aos dados através de conectores. Isso permite que cada parte da corporação acesse somente as informações que são necessárias ao negócio. Esses conectores irão se 'encaixar' no database central, que armazena as informações. Se o banco for relacional, utilizar-se-á a linguagem SQL para coletar os dados.
+
+Como ponto negativo, ressalta-se a dificuldade para alterar os esquemas dos databases (no caso dos relacionais, as tabelas). Essas mudanças ainda impactam nos conectores, que dependendo da implementação, terão de buscar o acréscimo de uma nova coluna, por exemplo, se for necessária. Outro ponto de atenção é a necessidade de redundância de dados para evitar que algum componente de armazenamento de dados corrompido impacte em todo o fluxo da empresa..
