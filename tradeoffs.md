@@ -10,7 +10,7 @@ Como não é possível ter uma relação simplesmente maniqueísta com arquitetu
 * Flexibilidade: Capacidade do sistema se adaptar às mudanças nos requerimentos;
 * Modificabilidade: Considera se o sistema pode ter funcionalidades adicionadas ou removidas com o menor custo possível;
 * Testabilidade: Verifica se os testes possuem cobertura adequada e se são executados rapidamente;
-* Integrigade Conceitual: Preocupa-se com a integridade entre os padrões utilizados no sistema (uso de camelCase, identação etc).
+* Integridade Conceitual: Preocupa-se com a integridade entre os padrões utilizados no sistema (uso de camelCase, identação etc).
 
 Além dos atributos de qualidade dos desenvolvedores, há também os voltados para atender as necessidades dos usuários. São eles:
 * Disponibilidade: Tempo em que o sistema segue em produção sem sofrer qualquer tipo de interrupção, ou seja, estar acessível aos usuários;
