@@ -8,10 +8,17 @@ Na construção dos times, aconselha-se o uso de duas equipes: a de **domínio d
 
 ## Arquitetura de referência
 
-Fundamental quando se pensa em linha de produtos. A capacidade modular da arquitetura elaborada é que dará tração ao processo de acoplamento de novas funcionalidades aos produtos. Há 3 técnicas que podem ser utilizadas nesse processo:
+Fundamental quando se pensa em linha de produtos. A capacidade modular da arquitetura elaborada é que dará tração ao processo de acoplamento de novas funcionalidades aos produtos. Deve respeitar as necessidades do software, enquanto considera os produtos atuais de sua linha. Ser capaz de receber variações, quando necessário. Há 3 técnicas que podem ser utilizadas nesse processo:
 
 ### Técnica de adaptação
+Possui apenas uma implementação. No entanto, via interfaces ou arquivos de configuração, permite a adição ou sobrescrição de novos métodos.
 
 ### Técnica de substituição
+Como o nome sugere, há de fato uma substituição no componente de acordo com as necessidades para realizar a variação.
 
 ### Técnica de extensão
+Comumente chamada de add-ons ou plugins, trata-se da técnica incumbida de prover variações através da adição de novos recursos.
+
+As variações podem ser definidas em diferentes estágios do projeto (no design ou já no desenvolvimento do sistema). Elas também podem ser lançadas, inclusive, após o produto já estar nas ruas.
+
+A natureza de técnicas de variação exige uma arquitetura modular. Por conta disso, na definição da arquitetura e nos requerimentos do software é importante definir quais serão as variações desejadas. Pois isso tende a gerar impacto no tempo de desenvolvimento e até mesmo no modo como os compontentes serão elaborados. É importante considerar os trade-offs.
